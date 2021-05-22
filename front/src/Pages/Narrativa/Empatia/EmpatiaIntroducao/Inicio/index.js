@@ -1,12 +1,16 @@
+import { Container } from "@material-ui/core";
 import React from "react";
-
-import Navbar from "./../../components/Navbar";
-import Grid from '@material-ui/core/Grid';
-
+import Box from '@material-ui/core/Box';
+import Navbar from "../../../../../components/Navbar";
+import '../Inicio/index.css';
 
 function Inicio(){
     return (
-     <div></div>
+    
+     <Box className="fundo">
+         <Navbar></Navbar>
+         <div>ssdsad</div>
+     </Box>
     )
 }
 
