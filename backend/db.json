@@ -1,19 +1,25 @@
 {
-  "posts": [
+  "users": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "saitama-Sensei",
+      "email": "saitama@gmail.com",
+      "password": "123",
+      "score": 17
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "name": "xaolin",
+      "email": "xaolin@gmail.com",
+      "password": "1234",
+      "score": 21
+    },
+    {
+      "id": 3,
+      "name": "flavin do pneu",
+      "email": "flavindopneu@gmail.com",
+      "password": "1235",
+      "score": 11
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
