@@ -10,7 +10,7 @@ import Fab from '@material-ui/core/Fab';
 
 import frame1 from '../../../../../assets/frame1.svg';
 import '../Inicio/index.css'
-function Inicio() {
+function Meio() {
     return (<>
         <Navbar></Navbar>
         <Box >
@@ -39,4 +39,4 @@ function Inicio() {
     )
 }
 
-export default Inicio;
+export default Meio;

@@ -97,7 +97,7 @@ function Navbar() {
       <div className={classes.root}>
         <CssBaseline />
         <AppBar
-          position="positionRelative"
+          position="relative"
           className={clsx(classes.appBar, {
             [classes.appBarShift]: open,
           })}
