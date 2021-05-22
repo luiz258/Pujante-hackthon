@@ -7,7 +7,7 @@ import {
 import LoginPage from './Pages/LoginPage'
 import HomePage from './Pages/Home'
 import EmpatiaIntroducaoInicio from './Pages/Narrativa/Empatia/EmpatiaIntroducao/Inicio'
-
+import EmpatiaIntroducaoMeio from './Pages/Narrativa/Empatia/EmpatiaIntroducao/Meio'
 
 
 function Routes(){
@@ -17,6 +17,7 @@ function Routes(){
                 <Route path="/" exact component={HomePage}/>
                 <Route path="/login" exact  component={LoginPage}/>
                 <Route path="/narrativa/empatia/introducao/inicio" exact  component={EmpatiaIntroducaoInicio}/>
+                <Route path="/narrativa/empatia/introducao/meio" exact  component={EmpatiaIntroducaoMeio}/>
             </Switch>
         </BrowserRouter>
     )

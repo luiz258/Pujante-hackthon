@@ -13,6 +13,7 @@ import '../Inicio/index.css'
 function Inicio() {
     return (<>
         <Navbar></Navbar>
+      
         <Box >
             <div className="fundo">
                 <div className="titulo">
