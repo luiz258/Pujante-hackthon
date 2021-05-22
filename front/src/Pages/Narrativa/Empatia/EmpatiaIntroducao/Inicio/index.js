@@ -9,7 +9,7 @@ import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import Fab from '@material-ui/core/Fab';
 import { positions } from '@material-ui/system';
-
+import '../Inicio/index.css'
 function Inicio() {
     return (<>
         <Navbar></Navbar>
