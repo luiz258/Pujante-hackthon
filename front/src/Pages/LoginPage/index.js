@@ -64,6 +64,7 @@ const LoginPage = () => {
             if(data.length) {
                 localStorage.setItem('name', data[0].name);
                 localStorage.setItem('email', data[0].email);
+                localStorage.setItem('token', true);
                 history.push('/');
             } else {
                 setInputErros({email: true, password: true})

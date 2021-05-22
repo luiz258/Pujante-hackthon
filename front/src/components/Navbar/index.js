@@ -13,6 +13,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -145,6 +146,15 @@ function Navbar() {
             {['Perfil'].map((text, index) => (
               <ListItem button key={text}>
                 <ListItemIcon> <PersonIcon /> </ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItem>
+            ))}
+          </List>
+
+          <List>
+            {['Deslogar'].map((text, index) => (
+              <ListItem button key={text}>
+                <ListItemIcon> <ExitToAppIcon /> </ListItemIcon>
                 <ListItemText primary={text} />
               </ListItem>
             ))}
