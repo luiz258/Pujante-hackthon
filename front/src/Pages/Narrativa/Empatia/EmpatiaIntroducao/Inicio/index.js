@@ -8,14 +8,19 @@ import { Typography } from '@material-ui/core';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import Fab from '@material-ui/core/Fab';
 
-import frame1 from '../../../../../assets/frame1.svg';
+import Frame1 from '../../../../../assets/Frame1.svg';
 import '../Inicio/index.css'
 function Inicio() {
     return (<>
       
+<<<<<<< Updated upstream
         <Box >
             <div className="fundo">
                 <Navbar/>
+=======
+        <Box className="fundo">
+            <div >
+>>>>>>> Stashed changes
                 <div className="titulo">
                     <Typography className="fontTitulo" variant="h3" >
                         Seja bem vindo a realidade empreendedora!
@@ -30,7 +35,14 @@ function Inicio() {
                         Proximo <KeyboardArrowRightIcon />
                     </Fab>
                 </Box>
+<<<<<<< Updated upstream
                     <img className="menino-loiro" src={frame1} alt="frame" />                
+=======
+                <div className="">
+                   
+                    <img className="" src={Frame1} alt="frame" />
+                </div>
+>>>>>>> Stashed changes
             </div>
         </Box>
     </>

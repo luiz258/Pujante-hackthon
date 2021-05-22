@@ -6,18 +6,14 @@ import '../Inicio/index.css';
 
 import Fab from '@material-ui/core/Fab';
 
-import '../Inicio/index.css'
+import '../Meio/index.css'
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import MobileStepper from '@material-ui/core/MobileStepper';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
-import SwipeableViews from 'react-swipeable-views';
-import { autoPlay } from 'react-swipeable-views-utils';
-
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+import { MobileStepper } from '@material-ui/core';
+import Frame2 from '../../../../../assets/Frame2.svg';
 
 const tutorialSteps = [
     {
@@ -68,14 +64,13 @@ function Meio() {
 
     return (<>
         <Navbar></Navbar>
-        <div  className="fundo">
-            <Paper square  className={classes.header}>
-                <Typography>{tutorialSteps[activeStep].label}</Typography>
-            </Paper>
-           
-            <MobileStepper
+        <Box  className="fundo ">
+            <Box>
+               <Box p={2} className="svg"> <Typography>{tutorialSteps[activeStep].label}</Typography></Box>
+               <MobileStepper
+                className="Stepper"
                 steps={maxSteps}
-                position="static"
+                position="relative"
                 nextButton={
                     <Fab color="primary" onClick={handleNext} hidde={activeStep === maxSteps - 1}>
                          {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
@@ -85,11 +80,12 @@ function Meio() {
                 <Fab color="primary" onClick={handleBack} disabled={activeStep === 0} aria-label="arrowRight" variant="extended" pos>
                        {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
                 </Fab>
-                    
-              
                 }
             />
-        </div>
+                <Box className="svg"><img  src={Frame2} alt="frame" /></Box>
+            </Box>
+            
+        </Box>
     </>
     )
 }

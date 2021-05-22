@@ -1,6 +1,6 @@
 .fundo{
     background-image: linear-gradient(#CCF1F9, #c4c4c421);
-    display: 'flex';
+
     
 }
 .titulo{
@@ -9,10 +9,23 @@
 .fontTitulo{
     color: #0D0B6D;
     font-weight: bold;
+   
 }
 
+.svg{
+    
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
 .FabButtonPosistion{
     margin: 10px;
     position: relative;
-    text-align: right;
+   
+}
+
+.Stepper{
+
+    background: rgba(255, 255, 255, 0);
 }
