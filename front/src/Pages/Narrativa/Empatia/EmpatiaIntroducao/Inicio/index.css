@@ -1,4 +1,13 @@
 .fundo{
-    background-image: linear-gradient(#CCF1F9, #C4C4C4);
-    height: 100%;
+    background-image: linear-gradient(#CCF1F9, #c4c4c465);
+    display: 'flex';
+    
+}
+.titulo{
+    padding: 20px;
+}
+.fontTitulo{
+    color: #0D0B6D;
+    font-weight: bolder;
+    font-weight: 900;
 }
