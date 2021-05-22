@@ -1,10 +1,16 @@
 .fundo{
     background-image: linear-gradient(#CCF1F9, #c4c4c421);
-    display: 'flex';
+    height: 100vh;
     
 }
 .titulo{
     padding: 20px;
+}
+
+.menino-loiro {
+    position: absolute;
+    left: 0;
+    bottom:0;
 }
 .fontTitulo{
     color: #0D0B6D;

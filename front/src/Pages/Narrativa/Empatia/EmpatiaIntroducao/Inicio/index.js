@@ -12,10 +12,10 @@ import frame1 from '../../../../../assets/frame1.svg';
 import '../Inicio/index.css'
 function Inicio() {
     return (<>
-        <Navbar></Navbar>
       
         <Box >
             <div className="fundo">
+                <Navbar/>
                 <div className="titulo">
                     <Typography className="fontTitulo" variant="h3" >
                         Seja bem vindo a realidade empreendedora!
@@ -30,10 +30,7 @@ function Inicio() {
                         Proximo <KeyboardArrowRightIcon />
                     </Fab>
                 </Box>
-                <div className="">
-                   
-                    <img className="" src={frame1} alt="frame" />
-                </div>
+                    <img className="menino-loiro" src={frame1} alt="frame" />                
             </div>
         </Box>
     </>
