@@ -9,11 +9,15 @@ import {
 } from "react-router-dom";
 
 import Navbar from "./../../components/Navbar";
-
+import Grid from '@material-ui/core/Grid';
+import Inicio from "../Narrativa/Empatia/EmpatiaIntroducao/Inicio";
 
 function Home(){
     return (
-       <Navbar></Navbar>
+      <Grid >
+       <Navbar ></Navbar>
+       <Inicio></Inicio>
+       </Grid>
     )
 }
 
