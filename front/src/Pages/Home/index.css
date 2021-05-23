@@ -1,0 +1,23 @@
+ *::before, *::after{
+  width: 100vw;
+  height:100vw;
+}
+
+.botao1{
+  position: relative;
+  
+  left:5em;
+  bottom: 43em;
+}
+.botao2{
+ position: relative;
+
+ left:15em;
+ bottom: 29em;
+}
+.botao3{
+ position: relative;
+ left:09em;
+ bottom: 7rem;
+
+}
