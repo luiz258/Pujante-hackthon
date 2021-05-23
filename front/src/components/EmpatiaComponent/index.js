@@ -1,7 +1,7 @@
 import { Button, makeStyles } from '@material-ui/core'
 import balaoImg from '../../assets/balao.svg'
 import {Link} from 'react-router-dom'
-import Navbar from "../Navbar";
+import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import './styles.css'
 
 const useStyles = makeStyles(theme => ({
@@ -26,14 +26,14 @@ const useStyles = makeStyles(theme => ({
       fontFamily: 'Roboto',
       maxWidth: 270,
       position: 'absolute',
-      top: 400,
+      top: 390,
     },
     buttonGroup: {
         marginTop: '2rem'
     }
 }))
 
-const EmpatiaComponent = ({opcoes,backgroundImg, textoBalao}) => {
+const EmpatiaComponent = ({opcoes,backgroundImg, textoBalao, finalizar}) => {
     const classes = useStyles();
 
     return (
@@ -48,7 +48,8 @@ const EmpatiaComponent = ({opcoes,backgroundImg, textoBalao}) => {
                 <Button
                 variant="contained"
                 color="primary"
-                size="medium"
+                size={finalizar ? 'large' :"medium"}
+                startIcon={finalizar ? <CheckCircleIcon /> : ''}
                 className={classes.button}
                 
                 >
