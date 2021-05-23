@@ -8,12 +8,12 @@ function Empatia_05() {
   return (
     <Container fluid maxWidth="xs">
     <EmpatiaComponent
-    textoBalao="Nossa!!! com tanta baderna fica ruim chegar em um consenso"
+    textoBalao="Nossa!!! com tanta baderna fica ruim chegar em um consenso."
     backgroundImg={imgEmpatia04}
     opcoes={
         [
-        {texto:'Certo, vc esta indo no caminho!',to: '/'},
-        {texto:'Certo, vc esta indo no caminho!',to: '/'},
+        {texto:'Desisto... perdi a paciência.',to: '/'/*tela de erro */},
+        {texto:'Acho que tive uma ideia.',to: '/narrativa/empatia/06'},
          ]}/>
 </Container>
   )

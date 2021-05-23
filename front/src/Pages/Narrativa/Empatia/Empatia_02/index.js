@@ -12,8 +12,8 @@ function Empatia_02() {
     backgroundImg={imgEmpatia02}
     opcoes={
         [
-        {texto:'Certo, vc esta indo no caminho!',to: '/'},
-        {texto:'Certo, vc esta indo no caminho!',to: '/'},
+        {texto:'Vou pensar mais sobre isso',to: '/narrativa/empatia/03'},
+        {texto:'Deixa eu ir ver a turma',to: '/narrativa/empatia/05'},
          ]}/>
 </Container>
   )

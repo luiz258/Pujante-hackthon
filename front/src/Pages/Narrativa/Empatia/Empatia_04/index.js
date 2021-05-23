@@ -13,8 +13,8 @@ function Empatia_04() {
     backgroundImg={imgEmpatia04}
     opcoes={
         [
-        {texto:'Certo, vc esta indo no caminho!',to: '/'},
-        {texto:'Certo, vc esta indo no caminho!',to: '/'},
+        {texto:'Continuo na zoação das redes sociais.',to: '/' /*rota de error */},
+        {texto:'Converso nas redes sociais com os colegas.',to: '/narrativa/empatia/05'},
          ]}/>
 </Container>
   )

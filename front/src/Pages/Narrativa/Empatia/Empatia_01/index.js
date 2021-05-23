@@ -24,10 +24,9 @@ const Empatia_01 = () => {
         backgroundImg={imgEmpatia01}
         opcoes={
             [
-            {texto:'Certo, vc esta indo no caminho!',to: '/'},
-            {texto:'Certo, vc esta indo no caminho!',to: '/'},
-            {texto:'Certo, vc esta indo no caminho!',to: '/'},
-            {texto:'Certo, vc esta indo no caminho!',to: '/'},
+            {texto:'Humm, acho que vou deixar isso quieto.',to: '/narrativa/empatia/02'},
+            {texto:'Vou lá apaziguar.',to: '/narrativa/empatia/05'},
+            {texto:'Vou falar com professores.',to: '/narrativa/empatia/03'},
              ]}/>
     </Container>
 
