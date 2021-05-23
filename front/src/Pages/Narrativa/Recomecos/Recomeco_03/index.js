@@ -13,7 +13,6 @@ function Recomeco03(){
       <>
        <div >
             <div className="fundo">
-                <Navbar />
                 <Grid container>
                     <Grid item xs={12}> 
                     <h3 className="fontTitulo titulo"  >

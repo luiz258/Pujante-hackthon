@@ -12,8 +12,7 @@ function Recomeco02(){
     return (
       <>
        <div >
-            <div className="fundo">
-                <Navbar />
+            <div>
                 <Grid container>
                     <Grid item xs={12}> 
                     <h3 className="fontTitulo titulo"  >
@@ -26,7 +25,7 @@ function Recomeco02(){
                     </Grid>
                     <Grid container >
                         <Grid xs={12}>
-                        <img className="center" style={{width: '100vw', maxWidth:'380px' ,position: 'relativo'}} src={Recomeco1} className="menino-loiro "  alt="frame" />
+                        <img className="center" style={{width: '100vw', maxWidth:'380px', zIndex: '-1'}} src={Recomeco1} className="menino-loiro "  alt="frame" />
                         </Grid>
                     </Grid>
                     <Grid  item xs={12} className="FabButtonPosistion">

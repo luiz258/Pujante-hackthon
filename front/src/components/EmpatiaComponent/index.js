@@ -26,7 +26,7 @@ const useStyles = makeStyles(theme => ({
       fontFamily: 'Roboto',
       maxWidth: 270,
       position: 'absolute',
-      top: 375,
+      top: 400,
     },
     buttonGroup: {
         marginTop: '2rem'
@@ -38,7 +38,6 @@ const EmpatiaComponent = ({opcoes,backgroundImg, textoBalao}) => {
 
     return (
     <>
-    <Navbar/>
     <img src={backgroundImg}/>
     <div className={classes.balaoGroup}>
         <img src={balaoImg} />
