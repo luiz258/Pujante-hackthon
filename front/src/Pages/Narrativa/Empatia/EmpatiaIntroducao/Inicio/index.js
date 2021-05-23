@@ -13,9 +13,9 @@ import Frame7 from '../../../../../assets/Frame7.svg';
 import '../Inicio/index.css'
 import { Link } from "react-router-dom";
 
-  alert('Este é focado em dispositivos mobiles')
 
 function Inicio() {
+    alert('Este é focado em dispositivos mobiles')
     return (<>
 
         <div >

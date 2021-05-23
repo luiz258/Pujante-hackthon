@@ -64,7 +64,6 @@ const LoginPage = () => {
             if(data.length) {
                 localStorage.setItem('name', data[0].name);
                 localStorage.setItem('email', data[0].email);
-                localStorage.setItem('token', true);
                 history.push('/');
             } else {
                 setInputErros({email: true, password: true})
@@ -84,7 +83,7 @@ const LoginPage = () => {
     console.log(values);
     const classes = useStyles();
     return (
-        
+
         <Container  maxWidth="xs">
         <CssBaseline />
         <div className={classes.paper}>
@@ -96,6 +95,7 @@ const LoginPage = () => {
           </Typography>
           <form onSubmit={handleSubmit} className={classes.forms} noValidate>
             <TextField
+            variant="outlined"
             error={inputErros.email}
             onChange={handleChange}
               margin="normal"
@@ -105,9 +105,10 @@ const LoginPage = () => {
               label="Email"
               name="email"
               helperText="Email incorreto."
-             
+
             />
             <TextField
+            variant="outlined"
             error={inputErros.password}
 
             onChange={handleChange}
@@ -130,13 +131,12 @@ const LoginPage = () => {
             >
               Entrar
             </Button>
-    
+
           </form>
         </div>
-  
+
       </Container>
 
     )
 }
-
-export default LoginPage;
+export default LoginPage
