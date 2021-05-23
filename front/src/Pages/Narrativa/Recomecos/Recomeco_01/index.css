@@ -1,0 +1,74 @@
+.fundo{
+  background-image: linear-gradient(#CCF1F9, #c4c4c421);
+  height: 100vh;
+  
+}
+.titulo{
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.menino-loiro {
+  position: absolute;
+  left: 0;
+  bottom:0;
+}
+.fontTitulo{
+  position: absolute;
+  left:2%;
+  right: 8%;
+  top: 6%;
+  bottom: 89.21%;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 44px;
+
+  color: #00004C;
+}
+
+.GroupAroundButton{
+  position: relative;
+    width: auto;
+    background: rgba(255, 255, 255, 0);
+}
+.dir{
+    
+    float: right;
+}
+
+.logo{
+  padding-top:18vw;
+}
+
+
+.FabButtonPosistion{
+  padding-top: 22rem;
+ 
+  position: relative;
+  text-align: right;
+  
+}
+
+.desc{
+
+  position: absolute;
+left: 10%;
+right: 10%;
+top: 16%;
+bottom: 55.62%;
+
+font-family: Archivo;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 36px;
+/* or 150% */
+
+
+/* Strong Blue */
+
+color: #0D0D80;
+}

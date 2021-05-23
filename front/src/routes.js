@@ -19,6 +19,8 @@ import Empatia_08 from "./Pages/Narrativa/Empatia/Empatia_08";
 import Empatia_09 from "./Pages/Narrativa/Empatia/Empatia_09";
 import Empatia_10 from "./Pages/Narrativa/Empatia/Empatia_10";
 
+import Recomeco_01 from "./Pages/Narrativa/Recomecos/Recomeco_01";
+
 
 function Routes(){
     return (
@@ -38,6 +40,8 @@ function Routes(){
                 <Route path="/narrativa/empatia/08/" exact  component={Empatia_08}/>
                 <Route path="/narrativa/empatia/09/" exact  component={Empatia_09}/>
                 <Route path="/narrativa/empatia/10/" exact  component={Empatia_10}/>
+
+                <Route path="/narrativa/recomeco/01" exact  component={Recomeco_01}/>
             </Switch>
         </BrowserRouter>
     )
