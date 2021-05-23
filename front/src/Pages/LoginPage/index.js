@@ -60,7 +60,6 @@ const LoginPage = () => {
 
         try {
            const {data } = await api.get(`/users?email=${values.email}&password=${values.password}`)
-           console.log(data[0])
             if(data.length) {
                 localStorage.setItem('name', data[0].name);
                 localStorage.setItem('email', data[0].email);
@@ -92,7 +91,7 @@ const LoginPage = () => {
           </div>
           <Alert variant="filled" severity="info">
        <p>Para ter melhor experiencia utilize o formato mobile no navegado, usando o atalho Ctrl+Shift+M!</p> 
-       <p> Conta de Acesso: <br/>  email: saitama@gmail.com, password: 123</p>
+       <p> Conta de Acesso: <br/>  email: saitama@gmail.com, Senha: 123</p>
       </Alert>
           <form onSubmit={handleSubmit} className={classes.forms} noValidate>
             <TextField

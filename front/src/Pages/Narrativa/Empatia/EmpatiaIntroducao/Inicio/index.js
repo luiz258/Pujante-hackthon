@@ -19,7 +19,6 @@ function Inicio() {
 
         <div >
             <div className="fundo">
-                <Navbar />
                 <Grid container className="titulo">
                     <Grid item xs={12}> <h3 className="fontTitulo"  >
                         Seja bem vindo ao
