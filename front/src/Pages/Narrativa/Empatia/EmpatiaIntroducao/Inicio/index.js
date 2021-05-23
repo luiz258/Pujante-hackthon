@@ -11,6 +11,7 @@ import Grid from '@material-ui/core/Grid';
 import Logo from '../../../../../assets/logo.svg';
 import Frame7 from '../../../../../assets/Frame7.svg';
 import '../Inicio/index.css'
+import { Link } from "react-router-dom";
 function Inicio() {
     return (<>
 
@@ -26,11 +27,11 @@ function Inicio() {
                         <img className="center" className="logo" src={Logo} alt="frame" />
                     </Grid>
                     <Grid container className="FabButtonPosistion">
-
+                        <Link to="/narrativa/empatia/introducao/meio">
                         <Fab item xs={12} color="primary" aria-label="arrowRight" variant="extended" >
                             Proximo <KeyboardArrowRightIcon />
                         </Fab>
-
+                        </Link>
                     </Grid>
                 </Grid>
 
