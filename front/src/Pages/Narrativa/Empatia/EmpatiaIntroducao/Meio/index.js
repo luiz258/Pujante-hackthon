@@ -85,8 +85,6 @@ function Meio() {
 
 
     return (<>
-        <Navbar></Navbar>
-
         <Grid container className="fundo " >
             <Grid container> <Fade in={true} className="titulo"><Grid xs={12}  >{tutorialSteps[activeStep].titulo}</Grid></Fade>
             </Grid>
