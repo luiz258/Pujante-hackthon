@@ -22,6 +22,7 @@ import HomeIcon from '@material-ui/icons/Home'
 import PersonIcon from '@material-ui/icons/Person';
 
 import {  useHistory } from 'react-router-dom'
+import { Button } from '@material-ui/core';
 const drawerWidth =250;
 
 const useStyles = makeStyles((theme) => ({
@@ -78,6 +79,14 @@ const useStyles = makeStyles((theme) => ({
       duration: theme.transitions.duration.enteringScreen,
     }),
     marginLeft: 0,
+  },root: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+  title: {
+    flexGrow: 1,
   },
 }));
 
@@ -108,28 +117,15 @@ function Navbar() {
       
       <div className={classes.root}>
         <CssBaseline />
-        <AppBar
-          position="relative"
-          className={clsx(classes.appBar, {
-            [classes.appBarShift]: open,
-          })}
-        >
-          <Toolbar>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              onClick={handleDrawerOpen}
-              edge="start"
-              className={clsx(classes.menuButton, open && classes.hide)}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="h6" noWrap>
-             RP Emprender
-            </Typography>
-          </Toolbar>
-        </AppBar>
-        <Drawer
+        <AppBar position="static">
+  <Toolbar>
+    <Typography variant="h6" className={classes.title}>
+      RP Empreender
+    </Typography>
+    <Button onClick={handleLogout}  color="inherit">Sair</Button>
+  </Toolbar>
+</AppBar>
+        {/* <Drawer
           className={classes.drawer}
           variant="persistent"
           anchor="left"
@@ -146,7 +142,7 @@ function Navbar() {
           <Divider />
           <List>
             {['Inicio'].map((text, index) => (
-              <ListItem button key={text}>
+              <ListItem src="/" button key={text}>
                 <ListItemIcon>{index % 2 === 0 ? <HomeIcon /> : <HomeIcon />}</ListItemIcon>
                 <ListItemText primary={text} />
               </ListItem>
@@ -164,13 +160,13 @@ function Navbar() {
 
           <List>
             {['Deslogar'].map((text, index) => (
-              <ListItem button key={text} onClick={handleLogout}>
+              <ListItem button key={text} >
                 <ListItemIcon> <ExitToAppIcon /> </ListItemIcon>
                 <ListItemText primary={text} />
               </ListItem>
             ))}
           </List>
-        </Drawer>
+        </Drawer> */}
         
       </div>
   );

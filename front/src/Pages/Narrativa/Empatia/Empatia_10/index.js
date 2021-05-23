@@ -13,7 +13,7 @@ function Empatia_10() {
     backgroundImg={imgEmpatia10}
     opcoes={
         [
-        {texto:'Deixa a gelara resolver essa bucha.',to: '/narrativa/recomeço/03'},
+        {texto:'Deixa a gelara resolver essa bucha.',to: '/narrativa/recomeco/03'},
         {texto:'Melhor levar isso pra eles.',to: '/narrativa/empatia/05' /* rota de erro */},
          ]}/>
 </Container>
