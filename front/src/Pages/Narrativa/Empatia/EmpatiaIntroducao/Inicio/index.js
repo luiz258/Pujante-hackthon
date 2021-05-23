@@ -15,7 +15,6 @@ import { Link } from "react-router-dom";
 
 
 function Inicio() {
-    alert('Este é focado em dispositivos mobiles')
     return (<>
 
         <div >
