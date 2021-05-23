@@ -20,6 +20,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 
 import HomeIcon from '@material-ui/icons/Home'
 import PersonIcon from '@material-ui/icons/Person';
+
+import { Redirect, useHistory } from 'react-router-dom'
 const drawerWidth =250;
 
 const useStyles = makeStyles((theme) => ({
@@ -81,6 +83,7 @@ const useStyles = makeStyles((theme) => ({
 
 function Navbar() {
 
+    const history = useHistory()
 
     const classes = useStyles();
     const theme = useTheme();
@@ -94,6 +97,13 @@ function Navbar() {
       setOpen(false);
     };
   
+    const handleLogout = () => {
+      localStorage.removeItem('name')
+      localStorage.removeItem('email')
+      
+      history.push('/login')
+    }
+
     return (
       <div className={classes.root}>
         <CssBaseline />
@@ -153,7 +163,7 @@ function Navbar() {
 
           <List>
             {['Deslogar'].map((text, index) => (
-              <ListItem button key={text}>
+              <ListItem button key={text} onClick={handleLogout}>
                 <ListItemIcon> <ExitToAppIcon /> </ListItemIcon>
                 <ListItemText primary={text} />
               </ListItem>
