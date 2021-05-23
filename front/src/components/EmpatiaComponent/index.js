@@ -1,7 +1,7 @@
 import { Button, makeStyles } from '@material-ui/core'
 import balaoImg from '../../assets/balao.svg'
 import {Link} from 'react-router-dom'
-
+import Navbar from "../Navbar";
 import './styles.css'
 
 const useStyles = makeStyles(theme => ({
@@ -38,6 +38,7 @@ const EmpatiaComponent = ({opcoes,backgroundImg, textoBalao}) => {
 
     return (
     <>
+    <Navbar/>
     <img src={backgroundImg}/>
     <div className={classes.balaoGroup}>
         <img src={balaoImg} />

@@ -20,16 +20,16 @@ function Inicio() {
         <div >
             <div className="fundo">
                 <Navbar />
-                <Grid container className="titulo">
-                    <Grid item xs={12}> <h3 className="fontTitulo"  >
+                <Grid container className="fontTitulo">
+                    <Grid > <h3 className=""  >
                         Seja bem vindo ao
                     </h3>
                     </Grid>
-                    <Grid item xs={12}>
-                        <img className="center" className="logo" src={Logo} alt="frame" />
+                    <Grid containe>
+                        <img item xs={12} className="center" className="logo" src={Logo} alt="frame" />
                     </Grid>
                     <Grid container className="FabButtonPosistion">
-                        <Link to="/narrativa/empatia/introducao/meio">
+                        <Link item xs={12} to="/narrativa/empatia/introducao/meio">
                         <Fab item xs={12} color="primary" aria-label="arrowRight" variant="extended" >
                             Proximo <KeyboardArrowRightIcon />
                         </Fab>

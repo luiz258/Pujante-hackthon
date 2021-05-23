@@ -3,9 +3,6 @@
     height: 100vh;
     
 }
-.titulo{
-    padding: 20px;
-}
 
 .menino-loiro {
     position: absolute;
@@ -14,9 +11,9 @@
 }
 .fontTitulo{
     position: absolute;
-    left:2%;
+    left:30px;
     right: 8%;
-    top: 6%;
+    top: 10%;
     bottom: 89.21%;
     
     font-family: Roboto;
@@ -25,7 +22,7 @@
     font-size: 30px;
     line-height: 44px;
     /* or 147% */
-    
+    padding-left: 8vw;
     
     /* Dark Blue */
     
@@ -33,24 +30,28 @@
 }
 
 .GroupAroundButton{
-    position: relative;
-      width: auto;
+    position: absolute;
+   
       background: rgba(255, 255, 255, 0);
   }
   .dir{
-      
+     
       float: right;
   }
 
-  .logo{
-    padding-top:18vw;
+ .logo{
+     min-width: 350;
+    padding-top:13vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
-
+ 
 
 .FabButtonPosistion{
-    margin-top: 7vw;
-    margin-left: 49vw;
+    
+  margin-top: -350px;
+  margin-left: 50vw;
     position: relative;
-    text-align: right;
+  
     
 }

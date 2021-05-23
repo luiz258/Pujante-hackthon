@@ -11,9 +11,11 @@ import Recomeco1 from '../../../../assets/Recomeco1.svg';
 function Recomeco01(){
     return (
       <>
+         
        <div >
+    
             <div className="fundo">
-                <Navbar />
+               
                 <Grid container>
                     <Grid item xs={12}> 
                     <h3 className="fontTitulo titulo"  >

@@ -14,7 +14,7 @@ function Home(){
  
         <img  src={Mapa} style={{}} />
         </Grid>
-        <Link className="botao1"><Button  variant="contained" color="primary">Fase 1</Button ></Link>
+        <Link className="botao1" to="/narrativa/empatia/01/"><Button  variant="contained" color="primary">Fase 1</Button ></Link>
         <Link className="botao2"><Button variant="contained" color="primary">Fase 2</Button ></Link>
         <Link className="botao3"><Button variant="contained" color="primary">Fase 3</Button ></Link>
      

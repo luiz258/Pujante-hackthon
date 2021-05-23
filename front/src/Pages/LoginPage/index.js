@@ -11,7 +11,7 @@ import Container from '@material-ui/core/Container';
 import api from '../../services/api';
 import { useHistory } from 'react-router-dom';
 
-
+import Logo from './../../assets/logo.svg';
 
 
 const useStyles = makeStyles(theme => ({
@@ -64,7 +64,7 @@ const LoginPage = () => {
             if(data.length) {
                 localStorage.setItem('name', data[0].name);
                 localStorage.setItem('email', data[0].email);
-                history.push('/');
+                history.push('/narrativa/empatia/introducao/inicio');
             } else {
                 setInputErros({email: true, password: true})
             }
@@ -87,12 +87,10 @@ const LoginPage = () => {
         <Container  maxWidth="xs">
         <CssBaseline />
         <div className={classes.paper}>
-          <Avatar className={classes.avatar}>
-            <LockOutlinedIcon />
-          </Avatar>
-          <Typography component="h1" variant="h5">
-            Logar
-          </Typography>
+          <div>
+            <img src={Logo}></img>
+          </div>
+          
           <form onSubmit={handleSubmit} className={classes.forms} noValidate>
             <TextField
             variant="outlined"
