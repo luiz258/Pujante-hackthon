@@ -33,7 +33,7 @@ const useStyles = makeStyles(theme => ({
     }
 }))
 
-const EmpatiaComponent = ({opcoes,backgroundImg}) => {
+const EmpatiaComponent = ({opcoes,backgroundImg, textoBalao}) => {
     const classes = useStyles();
 
     return (
@@ -41,7 +41,7 @@ const EmpatiaComponent = ({opcoes,backgroundImg}) => {
     <img src={backgroundImg}/>
     <div className={classes.balaoGroup}>
         <img src={balaoImg} />
-        <p className={classes.textoDecoration}>Vejo vários alunos desorganizados tumultuando sobre a questão levantada, alguns até gritando.</p>
+        <p className={classes.textoDecoration}>{textoBalao}</p>
         <div className={classes.buttonGroup}>
         {opcoes.map((opcao) => (
             <Link className={classes.linkButton} to={opcao.to}>

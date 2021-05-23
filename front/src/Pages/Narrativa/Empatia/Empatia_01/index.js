@@ -20,6 +20,7 @@ const Empatia_01 = () => {
     
     <Container fluid maxWidth="xs">
         <EmpatiaComponent
+        textoBalao="Vejo vários alunos desorganizados tumultuando sobre a questão levantada, alguns até gritando."
         backgroundImg={imgEmpatia01}
         opcoes={
             [
