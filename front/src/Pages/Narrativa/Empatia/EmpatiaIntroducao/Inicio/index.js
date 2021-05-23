@@ -1,9 +1,9 @@
 
-import React from "react";
-import Box from '@material-ui/core/Box';
+import React, { useState } from "react";
+import { makeStyles } from '@material-ui/core/styles';
 import Navbar from "../../../../../components/Navbar";
 import '../Inicio/index.css';
-import { Typography } from '@material-ui/core';
+
 
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import Fab from '@material-ui/core/Fab';
@@ -12,7 +12,10 @@ import Logo from '../../../../../assets/logo.svg';
 import Frame7 from '../../../../../assets/Frame7.svg';
 import '../Inicio/index.css'
 import { Link } from "react-router-dom";
+
+
 function Inicio() {
+    alert('Este é focado em dispositivos mobiles')
     return (<>
 
         <div >

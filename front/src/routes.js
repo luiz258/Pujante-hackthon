@@ -6,6 +6,8 @@ import {
 } from "react-router-dom";
 import LoginPage from './Pages/LoginPage'
 import HomePage from './Pages/Home'
+import PrivateRoute from '../src/components/PrivateRoute'
+
 import EmpatiaIntroducaoInicio from './Pages/Narrativa/Empatia/EmpatiaIntroducao/Inicio'
 import EmpatiaIntroducaoMeio from './Pages/Narrativa/Empatia/EmpatiaIntroducao/Meio'
 import Empatia_01 from "./Pages/Narrativa/Empatia/Empatia_01";
@@ -27,20 +29,20 @@ function Routes(){
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/" exact component={HomePage}/>
                 <Route path="/login" exact  component={LoginPage}/>
-                <Route path="/narrativa/empatia/introducao/inicio" exact  component={EmpatiaIntroducaoInicio}/>
-                <Route path="/narrativa/empatia/introducao/meio" exact  component={EmpatiaIntroducaoMeio}/>
-                <Route path="/narrativa/empatia/01/" exact  component={Empatia_01}/>
-                <Route path="/narrativa/empatia/02/" exact  component={Empatia_02}/>
-                <Route path="/narrativa/empatia/03/" exact  component={Empatia_03}/>
-                <Route path="/narrativa/empatia/04/" exact  component={Empatia_04}/>
-                <Route path="/narrativa/empatia/05/" exact  component={Empatia_05}/>
-                <Route path="/narrativa/empatia/06/" exact  component={Empatia_06}/>
-                <Route path="/narrativa/empatia/07/" exact  component={Empatia_07}/>
-                <Route path="/narrativa/empatia/08/" exact  component={Empatia_08}/>
-                <Route path="/narrativa/empatia/09/" exact  component={Empatia_09}/>
-                <Route path="/narrativa/empatia/10/" exact  component={Empatia_10}/>
+                <PrivateRoute path="/" exact component={HomePage}/>
+                <PrivateRoute path="/narrativa/empatia/introducao/inicio" exact  component={EmpatiaIntroducaoInicio}/>
+                <PrivateRoute path="/narrativa/empatia/introducao/meio" exact  component={EmpatiaIntroducaoMeio}/>
+                <PrivateRoute path="/narrativa/empatia/01/" exact  component={Empatia_01}/>
+                <PrivateRoute path="/narrativa/empatia/02/" exact  component={Empatia_02}/>
+                <PrivateRoute path="/narrativa/empatia/03/" exact  component={Empatia_03}/>
+                <PrivateRoute path="/narrativa/empatia/04/" exact  component={Empatia_04}/>
+                <PrivateRoute path="/narrativa/empatia/05/" exact  component={Empatia_05}/>
+                <PrivateRoute path="/narrativa/empatia/06/" exact  component={Empatia_06}/>
+                <PrivateRoute path="/narrativa/empatia/07/" exact  component={Empatia_07}/>
+                <PrivateRoute path="/narrativa/empatia/08/" exact  component={Empatia_08}/>
+                <PrivateRoute path="/narrativa/empatia/09/" exact  component={Empatia_09}/>
+                <PrivateRoute path="/narrativa/empatia/10/" exact  component={Empatia_10}/>
 
                 <Route path="/narrativa/recomeco/01" exact  component={Recomeco_01}/>
                 <Route path="/narrativa/recomeco/02" exact  component={Recomeco_02}/>
