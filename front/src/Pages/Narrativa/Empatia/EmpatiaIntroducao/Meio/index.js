@@ -5,14 +5,18 @@ import Navbar from "../../../../../components/Navbar";
 import '../Inicio/index.css';
 
 import Fab from '@material-ui/core/Fab';
+import {
 
+    Link,
+    Redirect
+} from "react-router-dom";
 import '../Meio/index.css'
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
+import Fade from '@material-ui/core/Fade';
+import Grid from '@material-ui/core/Grid';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
-import { MobileStepper } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import Frame2 from '../../../../../assets/Frame2.svg';
 
 const tutorialSteps = [
@@ -32,6 +36,11 @@ const tutorialSteps = [
         titlo: 'A formatura do 9º ano esta próxima',
         label: 'Nessa realidade paralela você e um aluno no qual o problema de todos também e seu problema.',
     },
+
+    {
+        titlo: ' ',
+        label: ' ',
+    },
 ];
 
 const useStyles = makeStyles((theme) => ({
@@ -44,10 +53,11 @@ const useStyles = makeStyles((theme) => ({
         background: '#f3f3f300',
         paddingLeft: theme.spacing(8),
     },
-   
+
 }));
 
 function Meio() {
+
 
     const classes = useStyles();
     const theme = useTheme();
@@ -55,37 +65,53 @@ function Meio() {
     const maxSteps = tutorialSteps.length;
 
     const handleNext = () => {
+        console.log(activeStep);
+        if (activeStep > 1) {
+            < Link to="/">sdsasd</Link>
+        }
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
+        console.log(activeStep);
+
+
     };
 
     const handleBack = () => {
         setActiveStep((prevActiveStep) => prevActiveStep - 1);
+
     };
+
+
 
     return (<>
         <Navbar></Navbar>
-        <Box  className="fundo ">
-            <Box>
-               <Box p={2} className="svg"> <Typography>{tutorialSteps[activeStep].label}</Typography></Box>
-               <MobileStepper
-                className="Stepper"
-                steps={maxSteps}
-                position="relative"
-                nextButton={
-                    <Fab color="primary" onClick={handleNext} hidde={activeStep === maxSteps - 1}>
-                         {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
+
+        <Grid container className="fundo " classes={{  flexGrow:1 }}>
+            <Grid container alignContent="space-around" >
+                <Grid item xs={12} hidden={activeStep === 5}> <Fade in={true}><Grid xs={12} className="desc">{tutorialSteps[activeStep].label}</Grid></Fade></Grid>
+
+              
+ 
+               
+            </Grid>
+            <Grid container direction="row" justify="center" className="GroupAroundButton" >
+            <Grid item xs  hidden={activeStep === 5} >
+                    <Fab color="primary" onClick={handleBack} disabled={activeStep === 0} aria-label="arrowRight" pos>
+                        {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
                     </Fab>
-                }
-                backButton={
-                <Fab color="primary" onClick={handleBack} disabled={activeStep === 0} aria-label="arrowRight" variant="extended" pos>
-                       {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
-                </Fab>
-                }
-            />
-                <Box className="svg"><img  src={Frame2} alt="frame" /></Box>
-            </Box>
+                </Grid>
+                <Grid> <Link hidden={activeStep < 5} to="/" pos> <Button size="large" item xs={12} paddingTop={-8} variant="contained" color="primary" >Começar</Button></Link></Grid>
+
+                <Grid item xs hidden={activeStep === 5}>
+                    <Fab color="primary" className="dir" onClick={handleNext} hidden={activeStep === maxSteps - 1} disabled={activeStep === 5}pos>
+                        {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
+                    </Fab>
+                </Grid>
+            </Grid>
+           
             
-        </Box>
+                <Grid item xs  className="svg"><img src={Frame2} alt="frame" /></Grid>
+               
+        </Grid>
     </>
     )
 }

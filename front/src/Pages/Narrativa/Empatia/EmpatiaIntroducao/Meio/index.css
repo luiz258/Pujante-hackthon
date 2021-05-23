@@ -1,10 +1,11 @@
-.fundo{
-    background-image: linear-gradient(#CCF1F9, #c4c4c421);
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
 
+.fundo{
+    background-image: linear-gradient(#CCF1F9, #c4c4c438);
     
 }
 .titulo{
-    padding: 20px;
+    padding: 10px;
 }
 .fontTitulo{
     color: #0D0B6D;
@@ -12,20 +13,40 @@
    
 }
 
-.svg{
-    
-    display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-.FabButtonPosistion{
-    margin: 10px;
-    position: relative;
+.svg {
+     position: absolute;
+    bottom:0; 
    
 }
 
-.Stepper{
-
+.GroupAroundButton{
+  position: relative;
+  
     background: rgba(255, 255, 255, 0);
+}
+.dir{
+    position: absolute;
+    float: right;
+}
+
+.desc{
+position: absolute;
+left: 8.53%;
+right: 7.47%;
+top: 10.79%;
+bottom: 56.82%;
+
+font-family: Archivo;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 36px;
+/* or 150% */
+
+font-family: 'Archivo Narrow', sans-serif;
+
+/* Strong Blue */
+
+color: #0D0D80;
+
 }

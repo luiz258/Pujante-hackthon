@@ -13,14 +13,9 @@ import '../Inicio/index.css'
 function Inicio() {
     return (<>
       
-<<<<<<< Updated upstream
         <Box >
             <div className="fundo">
                 <Navbar/>
-=======
-        <Box className="fundo">
-            <div >
->>>>>>> Stashed changes
                 <div className="titulo">
                     <Typography className="fontTitulo" variant="h3" >
                         Seja bem vindo a realidade empreendedora!
@@ -35,14 +30,7 @@ function Inicio() {
                         Proximo <KeyboardArrowRightIcon />
                     </Fab>
                 </Box>
-<<<<<<< Updated upstream
-                    <img className="menino-loiro" src={frame1} alt="frame" />                
-=======
-                <div className="">
-                   
-                    <img className="" src={Frame1} alt="frame" />
-                </div>
->>>>>>> Stashed changes
+                    <img className="menino-loiro" src={Frame1} alt="frame" />                
             </div>
         </Box>
     </>
