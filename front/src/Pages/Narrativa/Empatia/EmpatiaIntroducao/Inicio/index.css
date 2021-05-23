@@ -13,13 +13,44 @@
     bottom:0;
 }
 .fontTitulo{
-    color: #0D0B6D;
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    top: 6%;
+    bottom: 89.21%;
+    
+    font-family: Roboto;
+    font-style: normal;
     font-weight: bold;
+    font-size: 30px;
+    line-height: 44px;
+    /* or 147% */
+    
+    
+    /* Dark Blue */
+    
+    color: #00004C;
+}
+
+.GroupAroundButton{
+    position: relative;
+      width: auto;
+      background: rgba(255, 255, 255, 0);
+  }
+  .dir{
+      
+      float: right;
+  }
+
+  .logo{
+    padding-top:18vw;
 }
 
 
 .FabButtonPosistion{
-    margin: 10px;
+    margin-top: 7vw;
+    margin-left: 49vw;
     position: relative;
     text-align: right;
+    
 }

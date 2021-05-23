@@ -5,7 +5,23 @@
     
 }
 .titulo{
-    padding: 10px;
+    position: absolute;
+left: 8%;
+right: 8%;
+top: 6%;
+bottom: 80.81%;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 44px;
+/* or 147% */
+
+
+/* Dark Blue */
+
+color: #00004C;
+
 }
 .fontTitulo{
     color: #0D0B6D;
@@ -19,15 +35,6 @@
    
 }
 
-.GroupAroundButton{
-  position: relative;
-  
-    background: rgba(255, 255, 255, 0);
-}
-.dir{
-    position: absolute;
-    float: right;
-}
 
 .desc{
 position: absolute;
@@ -35,7 +42,7 @@ left: 8.53%;
 right: 7.47%;
 top: 10.79%;
 bottom: 56.82%;
-
+margin-top: 20vw;
 font-family: Archivo;
 font-style: normal;
 font-weight: normal;
@@ -50,3 +57,13 @@ font-family: 'Archivo Narrow', sans-serif;
 color: #0D0D80;
 
 }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .btnFim{
+      padding-bottom: 150px;
+  }

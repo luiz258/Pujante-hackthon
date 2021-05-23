@@ -18,29 +18,31 @@ import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import { Button } from '@material-ui/core';
 import Frame2 from '../../../../../assets/Frame2.svg';
+import Frame9 from '../../../../../assets/Frame9.svg';
+import Frame11 from '../../../../../assets/Frame11.svg';
+import Frame10 from '../../../../../assets/Frame10.svg';
+import Frame8 from '../../../../../assets/Frame8.svg';
 
 const tutorialSteps = [
     {
+        label: 'Acordar querendo mudar o mundo, talvez uma boa alternativa seja mudar o mundo a sua volta e até mesmo o seu.',
+        frame: Frame8,
+    },
+    {
         label: 'Essa mudança no mundo pode começar a partir de agora!...',
+        frame: Frame9,
     },
     {
         label: 'Você será direcionado para outro mundo, onde se deparará com um cenário onde resolver problemas e a solução.',
+        frame: Frame10,
     },
     {
-        label: 'Você caiu de paraquedas em uma nova realidade.',
-    },
-    {
-        label: 'Seja bem vindo a realidade (Empreendedora)',
-    },
-    {
-        titlo: 'A formatura do 9º ano esta próxima',
+        titulo: 'A formatura do 9º ano esta próxima',
         label: 'Nessa realidade paralela você e um aluno no qual o problema de todos também e seu problema.',
-    },
-
-    {
-        titlo: ' ',
-        label: ' ',
-    },
+        frame: Frame11,
+    }, {
+        label: 'Voce',
+    }
 ];
 
 const useStyles = makeStyles((theme) => ({
@@ -85,32 +87,34 @@ function Meio() {
     return (<>
         <Navbar></Navbar>
 
-        <Grid container className="fundo " classes={{  flexGrow:1 }}>
-            <Grid container alignContent="space-around" >
-                <Grid item xs={12} hidden={activeStep === 5}> <Fade in={true}><Grid xs={12} className="desc">{tutorialSteps[activeStep].label}</Grid></Fade></Grid>
-
-              
- 
-               
+        <Grid container className="fundo " >
+            <Grid container> <Fade in={true} className="titulo"><Grid xs={12}  >{tutorialSteps[activeStep].titulo}</Grid></Fade>
             </Grid>
+            <Grid container >
+
+                <Fade in={true}>
+                    <Grid xs={12} hidden={activeStep === 4} className="desc"  >{tutorialSteps[activeStep].label}</Grid></Fade>
+            </Grid>
+
+            <Grid item xs className="svg"><img className="center" src={tutorialSteps[activeStep].frame} alt="frame" /></Grid>
             <Grid container direction="row" justify="center" className="GroupAroundButton" >
-            <Grid item xs  hidden={activeStep === 5} >
+                <Grid item xs hidden={activeStep === 3} >
                     <Fab color="primary" onClick={handleBack} disabled={activeStep === 0} aria-label="arrowRight" pos>
                         {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
                     </Fab>
                 </Grid>
-                <Grid> <Link hidden={activeStep < 5} to="/" pos> <Button size="large" item xs={12} paddingTop={-8} variant="contained" color="primary" >Começar</Button></Link></Grid>
+                <Grid className="btnFim"> <Link hidden={activeStep < 3} to="/" > <Button size="large" item xs={12} variant="contained" color="primary" >Começar</Button></Link></Grid>
 
-                <Grid item xs hidden={activeStep === 5}>
-                    <Fab color="primary" className="dir" onClick={handleNext} hidden={activeStep === maxSteps - 1} disabled={activeStep === 5}pos>
+                <Grid item xs hidden={activeStep === 3}>
+                    <Fab color="primary" className="dir" onClick={handleNext} hidden={activeStep === maxSteps - 1} disabled={activeStep === 5} pos>
                         {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
                     </Fab>
                 </Grid>
             </Grid>
-           
-            
-                <Grid item xs  className="svg"><img src={Frame2} alt="frame" /></Grid>
-               
+
+
+
+
         </Grid>
     </>
     )

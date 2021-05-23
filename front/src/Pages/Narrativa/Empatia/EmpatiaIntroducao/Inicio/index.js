@@ -7,32 +7,39 @@ import { Typography } from '@material-ui/core';
 
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import Fab from '@material-ui/core/Fab';
-
-import Frame1 from '../../../../../assets/Frame1.svg';
+import Grid from '@material-ui/core/Grid';
+import Logo from '../../../../../assets/logo.svg';
+import Frame7 from '../../../../../assets/Frame7.svg';
 import '../Inicio/index.css'
 function Inicio() {
     return (<>
-      
-        <Box >
-            <div className="fundo">
-                <Navbar/>
-                <div className="titulo">
-                    <Typography className="fontTitulo" variant="h3" >
-                        Seja bem vindo a realidade empreendedora!
-                    </Typography>
-                    <Typography className="descricao"  variant="h5">
-                        Vamos conhecer como as coisas funcionam nesse mundo paralelo!
-                    </Typography>
-                </div>
 
-                <Box position="relative" className="FabButtonPosistion">
-                    <Fab color="primary"  aria-label="arrowRight" variant="extended" pos>
-                        Proximo <KeyboardArrowRightIcon />
-                    </Fab>
-                </Box>
-                    <img className="menino-loiro" src={Frame1} alt="frame" />                
+        <div >
+            <div className="fundo">
+                <Navbar />
+                <Grid container className="titulo">
+                    <Grid item xs={12}> <h3 className="fontTitulo"  >
+                        Seja bem vindo ao
+                    </h3>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <img className="center" className="logo" src={Logo} alt="frame" />
+                    </Grid>
+                    <Grid container className="FabButtonPosistion">
+
+                        <Fab item xs={12} color="primary" aria-label="arrowRight" variant="extended" >
+                            Proximo <KeyboardArrowRightIcon />
+                        </Fab>
+
+                    </Grid>
+                </Grid>
+
+
+                {/* <img className="menino-loiro" src={Frame7} alt="frame" />                 */}
             </div>
-        </Box>
+        </div>
+
+
     </>
     )
 }
