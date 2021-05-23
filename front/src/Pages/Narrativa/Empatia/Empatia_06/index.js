@@ -13,7 +13,7 @@ function Empatia_06() {
     backgroundImg={imgEmpatia06}
     opcoes={
         [
-        {texto:'Sem atenção melhor fica de fora observando.',to: '/' /*resposta errada */},
+        {texto:'Sem atenção melhor fica de fora observando.',to: '/narrativa/empatia/01' /*resposta errada */},
         {texto:'Me juntas com colegas e buscar apoio',to: '/narrativa/empatia/07'},
          ]}/>
 </Container>

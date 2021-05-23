@@ -13,7 +13,7 @@ function Empatia_07() {
     backgroundImg={imgEmpatia06}
     opcoes={
         [
-        {texto:'Eu e minha turma dizemos como vai ser.',to: '/' /*rota de erro */},
+        {texto:'Eu e minha turma dizemos como vai ser.',to: '/narrativa/empatia/06' /*rota de erro */},
         {texto:'Tentamos dar vez e voz a todos.',to: '/narrativa/empatia/08' /*Rota para segunda fase */},
          ]}/>
 </Container>

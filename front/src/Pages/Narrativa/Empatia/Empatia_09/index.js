@@ -13,8 +13,7 @@ function Empatia_09() {
     backgroundImg={imgEmpatia04}
     opcoes={
         [
-        {texto:'Continuar.',to: '/' /*rota para fase 2*/ },
-        {texto:'Voltar para menu',to: '/'},
+        {texto:'Finalizar',to: '/'},
          ]}/>
 </Container>
   )

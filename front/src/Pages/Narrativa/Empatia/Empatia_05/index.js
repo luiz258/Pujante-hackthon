@@ -12,7 +12,7 @@ function Empatia_05() {
     backgroundImg={imgEmpatia04}
     opcoes={
         [
-        {texto:'Desisto... perdi a paciência.',to: '/'/*tela de erro */},
+        {texto:'Desisto... perdi a paciência.',to: '/narrativa/recomeco/02'/*tela de erro */},
         {texto:'Acho que tive uma ideia.',to: '/narrativa/empatia/06'},
          ]}/>
 </Container>
