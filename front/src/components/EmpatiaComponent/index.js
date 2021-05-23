@@ -26,7 +26,7 @@ const useStyles = makeStyles(theme => ({
       fontFamily: 'Roboto',
       maxWidth: 270,
       position: 'absolute',
-      top: 390,
+      top: 375,
     },
     buttonGroup: {
         marginTop: '2rem'

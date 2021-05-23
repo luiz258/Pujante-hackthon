@@ -8,13 +8,13 @@ function Empatia_10() {
   return (
     <Container fluid maxWidth="xs">
     <EmpatiaComponent
-    textoBalao="Supimpa!!! que ideal genial.
+    textoBalao="Supimpa! Que ideal genial.
     isso nada mais que aplicar a forma empreendedora no problemas"
     backgroundImg={imgEmpatia10}
     opcoes={
         [
-        {texto:'Certo, vc esta indo no caminho!',to: '/'},
-        {texto:'Certo, vc esta indo no caminho!',to: '/'},
+        {texto:'Deixa a gelara resolver essa bucha.',to: '/'},
+        {texto:'Melhor levar isso pra eles.',to: '/narrativa/empatia/05' /* rota de erro */},
          ]}/>
 </Container>
   )

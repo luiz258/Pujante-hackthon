@@ -8,12 +8,12 @@ function Empatia_03() {
   return (
     <Container fluid maxWidth="xs">
     <EmpatiaComponent
-    textoBalao="Como professor te aconselho a descomplicar, questione seus motivos, seja realista e sempre planeje seus passos"
+    textoBalao="Como professor te aconselho a descomplicar, questione seus motivos, seja realista e sempre planeje seus passos."
     backgroundImg={imgEmpatia02}
     opcoes={
         [
-        {texto:'Certo, vc esta indo no caminho!',to: '/'},
-        {texto:'Certo, vc esta indo no caminho!',to: '/'},
+        {texto:'Sei lá.  Vou fazer uns stories da galera.',to: '/narrativa/empatia/04'},
+        {texto:'Vamos lá, mas o que fazer afinal...',to: '/narrativa/empatia/10'},
          ]}/>
 </Container>
   )
