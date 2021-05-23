@@ -21,7 +21,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import HomeIcon from '@material-ui/icons/Home'
 import PersonIcon from '@material-ui/icons/Person';
 
-import { Redirect, useHistory } from 'react-router-dom'
+import {  useHistory } from 'react-router-dom'
 const drawerWidth =250;
 
 const useStyles = makeStyles((theme) => ({

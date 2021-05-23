@@ -38,7 +38,7 @@ const EmpatiaComponent = ({opcoes,backgroundImg, textoBalao}) => {
 
     return (
     <>
-    <Navbar/>
+    
     <img src={backgroundImg}/>
     <div className={classes.balaoGroup}>
         <img src={balaoImg} />

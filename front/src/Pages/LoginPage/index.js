@@ -7,7 +7,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-
+import Alert from '@material-ui/lab/Alert';
 import api from '../../services/api';
 import { useHistory } from 'react-router-dom';
 
@@ -90,7 +90,10 @@ const LoginPage = () => {
           <div>
             <img src={Logo}></img>
           </div>
-          
+          <Alert variant="filled" severity="info">
+       <p>Para ter melhor experiencia utilize o formato mobile no navegado, usando o atalho Ctrl+Shift+M!</p> 
+       <p> Conta de Acesso: <br/>  email: saitama@gmail.com, password: 123</p>
+      </Alert>
           <form onSubmit={handleSubmit} className={classes.forms} noValidate>
             <TextField
             variant="outlined"
