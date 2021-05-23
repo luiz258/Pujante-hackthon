@@ -20,8 +20,9 @@ import Empatia_09 from "./Pages/Narrativa/Empatia/Empatia_09";
 import Empatia_10 from "./Pages/Narrativa/Empatia/Empatia_10";
 
 import Recomeco_01 from "./Pages/Narrativa/Recomecos/Recomeco_01";
-
-
+import Recomeco_02 from "./Pages/Narrativa/Recomecos/Recomeco_02";
+import Recomeco_03 from "./Pages/Narrativa/Recomecos/Recomeco_03";
+import Recomeco_04 from "./Pages/Narrativa/Recomecos/Recomeco_04";
 function Routes(){
     return (
         <BrowserRouter>
@@ -42,6 +43,9 @@ function Routes(){
                 <Route path="/narrativa/empatia/10/" exact  component={Empatia_10}/>
 
                 <Route path="/narrativa/recomeco/01" exact  component={Recomeco_01}/>
+                <Route path="/narrativa/recomeco/02" exact  component={Recomeco_02}/>
+                <Route path="/narrativa/recomeco/03" exact  component={Recomeco_03}/>
+                <Route path="/narrativa/recomeco/04" exact  component={Recomeco_04}/>
             </Switch>
         </BrowserRouter>
     )

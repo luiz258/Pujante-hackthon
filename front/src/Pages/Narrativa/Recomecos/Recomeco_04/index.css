@@ -1,8 +1,4 @@
-.fundo{
-  background-image: linear-gradient(#CCF1F9, #c4c4c421);
-  height: 100vh;
-  
-}
+
 .titulo{
   padding: 20px;
   margin-left: 20px;
@@ -17,7 +13,7 @@
   position: absolute;
   left:2%;
   right: 8%;
-  top: 6%;
+  top: 10%;
   bottom: 89.21%;
   
   font-family: Roboto;
@@ -57,7 +53,7 @@
   position: absolute;
 left: 10%;
 right: 10%;
-top: 16%;
+top: 10%;
 bottom: 55.62%;
 
 font-family: Archivo;
